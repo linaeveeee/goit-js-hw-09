@@ -49,7 +49,7 @@ function addLeadingZero(value) {
 
 function handleTimerStart() {
   const inervalTimer = setInterval(() => {
-    let timeLeft = deadlineTime(userDate);
+    let timeLeft = deadlineTime(date);
 
     if (timeLeft <= 1000) {
       clearInterval(inervalTimer);
