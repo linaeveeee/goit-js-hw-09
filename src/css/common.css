@@ -58,7 +58,7 @@ button:disabled {
   border: none;
 }
 
-.start-timer-btn {
+.timer-btn {
   height: 30px;
   padding: 0 35px 0 35px;
 }
@@ -87,6 +87,6 @@ button:disabled {
 }
 
 .promise-btn {
-  background-color: darkblue;
+  background-color: yellowgreen;
   padding: 10px 20px;
 }
