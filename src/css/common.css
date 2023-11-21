@@ -16,3 +16,77 @@ img {
   display: block;
   max-width: 100%;
 }
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+.btn-box {
+  display: flex;
+  padding: 260px;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.start-btn {
+  padding: 30px 60px;
+  background-color: green;
+  font-size: 28px;
+}
+
+.stop-btn {
+  padding: 30px 60px;
+  background-color: red;
+  font-size: 28px;
+}
+
+.input-timer {
+  outline: none;
+  border: 1px solid purple;
+  height: 30px;
+  width: 150px;
+}
+
+.input-timer:focus {
+  outline: 2px solid yellow;
+  border: none;
+}
+
+.start-timer-btn {
+  height: 30px;
+  padding: 0 35px 0 35px;
+}
+
+.timer {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.field {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+}
+
+.value {
+  font-size: 30px;
+}
+
+.label {
+  font-size: 12px;
+}
+
+.promise-btn {
+  background-color: darkblue;
+  padding: 10px 20px;
+}
