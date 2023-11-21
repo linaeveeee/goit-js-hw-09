@@ -48,11 +48,11 @@ function addLeadingZero(value) {
 }
 
 function handleTimerStart() {
-  const inervalTimer = setInterval(() => {
-    let timeLeft = deadlineTime(date);
+  const intervalTimer = setInterval(() => {
+    let timeLeft = deadlineTime(userDate);
 
     if (timeLeft <= 1000) {
-      clearInterval(inervalTimer);
+      clearInterval(intervalTimer);
     }
 
     function convertMs(ms) {
@@ -66,10 +66,10 @@ function handleTimerStart() {
       const minutes = Math.floor(((ms % day) % hour) / minute);
       const seconds = Math.floor((((ms % day) % hour) % minute) / second);
 
-      timerDays.textContent = addLeadingZero(days);
-      timerHours.textContent = addLeadingZero(hours);
-      timerMinutes.textContent = addLeadingZero(minutes);
-      timerSeconds.textContent = addLeadingZero(seconds);
+      refs.timerDays.textContent = addLeadingZero(days);
+      refs.timerHours.textContent = addLeadingZero(hours);
+      refs.timerMinutes.textContent = addLeadingZero(minutes);
+      refs.timerSeconds.textContent = addLeadingZero(seconds);
     }
 
     convertMs(timeLeft);
