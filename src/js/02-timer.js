@@ -26,7 +26,7 @@ const options = {
   },
 };
 
-flatpickr(inputDate, options);
+flatpickr(refs.inputDate, options);
 
 function checkCorrectDate(date) {
   const targetTime = deadlineTime(date);
