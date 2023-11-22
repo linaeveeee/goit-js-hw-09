@@ -5,6 +5,7 @@ const refs = {
 };
 
 let colorInterval;
+refs.btnStop.disabled = true;
 
 refs.btnStart.addEventListener('click', handleBtnStart);
 refs.btnStop.addEventListener('click', handleBtnStop);

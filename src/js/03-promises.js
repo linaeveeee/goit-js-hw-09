@@ -19,7 +19,7 @@ function handleSubmit(event) {
   let step = Number(refs.inputStep.value);
   let amount = Number(refs.inputAmount.value);
 
-  let totalDelay = 0;
+  // let totalDelay = 0;
   for (let position = 1; position <= amount; position += 1) {
     createPromise(position, delay)
       .then(({ position, delay }) => {
@@ -33,9 +33,9 @@ function handleSubmit(event) {
         );
       });
 
-    totalDelay += step;
+    delay += step;
   }
-  promiseForm.reset();
+  refs.promiseForm.reset();
   setTimeout(() => {
     refs.promiseBtn.disabled = false;
   }, delay);
